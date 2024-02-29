@@ -1,0 +1,215 @@
+* {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: norseFont;
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    
+}
+.pageleft {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 211, 211);
+    background-image: url(bckgrnd.avif);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100vh;
+  
+}
+.maintitle {
+    display: flex;
+    color: white;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.164);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7.5em;
+    height: 5em;
+
+    
+    
+}
+p {
+    width: 47%;
+    
+}
+#logo {
+    display: flex;
+    height: 4em;
+    width: 3em;
+}
+.lefttxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: norseFont;
+    font-size: 3em;
+}
+
+
+.pageright {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 225, 225);
+    font-weight: 400;
+ 
+}
+
+.rightheading {
+    display: flex;
+    flex-wrap: wrap;
+    height: 12.5em;
+    box-shadow: 0 4px 2px -2px gray;
+  
+    margin-top: 10em;
+    font-size: 1.5em;
+    padding-left: 3rem;
+    margin-bottom: -20px;
+    
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    width: 15em;
+    justify-content: center;
+    align-items: center;
+    border: 1px black;
+    box-shadow: 2px 2px 2px 0px grey;
+    border-radius: 8px;
+    background-color: #596d48;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    height: 4em;
+}
+
+.btn:mouseov {
+    cursor: pointer;
+}
+
+
+.bottomtext {
+    display: flex;
+    height: 1em;
+}
+form {
+    margin-left: 3em;
+    margin: 0;
+    width: 100%;
+    margin-top: 1.5em;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0;
+    padding-bottom: 3em;
+    height: 14em;
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: white;
+}
+label {
+    
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 1em;
+    height: 2em;
+    font-size: small;
+    font-weight: bold;
+}
+
+input {
+    position: relative;
+    height: 1.5em;
+}
+legend {
+    padding-left: 3em;
+    display: flex;
+    position: relative;
+    margin-bottom: -1.5em;
+    margin-top: 1em;
+    font-size: larger;
+    font-weight: bold;
+}
+.firstcol {
+    display: flex;
+    flex-direction: column;
+    width: 200px;  
+    height: 500px;
+}
+.container {
+    display: flex;
+    gap: 4em;
+    padding-left: 3em;
+    padding-bottom: 3em;
+    height: 100%;
+}
+.secondcol {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+}
+
+.footer {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+}
+
+a {
+    color: #596d48;
+    text-decoration: none;
+}
+
+:focus {
+    outline: 0;
+    box-shadow: 2px 2px 2px 0px rgb(47, 3, 247);
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+
+:valid {
+    outline: 0;
+    border-color: green
+}
+
+:invalid {
+    outline: 0;
+    border-color: red
+}
+
+:invalid:focus {
+    outline: 0;
+    box-shadow: 2px 2px 2px 0px rgb(47, 3, 247);
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+
+#error{
+    outline: 1px solid red;
+}

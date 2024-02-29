@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pageleft">
+        <div class="maintitle">
+            <img src="odin-lined.png" width="100px" height="100px" alt="odin logo" id="logo">
+            <div class="lefttxt">ODIN</div>
+        </div>
+      
+    </div>
+
+    <div class="pageright">
+        <div class="rightheading">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+                <br> <br>You <em>know</em> you want to.
+            </p>
+        
+        </div>
+        <form id="myForm" action="dummyactiom" method="post">
+           
+                <legend>Let's do this!</legend>
+
+                <div class="container">
+                    <section class="firstcol">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" class="name" name="firstname" required/>
+                        <label for="email">EMAIL</label>
+                        <input type="email" class="email" name="useremail" required/>
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="error" class="pwd" name="userpwd" required/>
+                    
+                    </section>
+                    <section class="secondcol">
+                        <label for="secondname">LAST NAME</label>
+                        <input type="text"  class="secondname" name="lastname" required/>
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" class="number" name="usernumber" required/>
+                        <label for="pwdconfirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="error" class="pwdconfirm" name="userpwdconfirm" required/>
+                    </section>
+                </div>
+            
+            
+        </form>
+
+        <div class="footer">
+            <input class="btn" type="submit" form="myForm" value="Create Account" onclick="pwdCheck()" />
+            <div class="bottomtext">
+                <p>Already have an account? <a href="dummylink">Log In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const password = document.querySelector(".pwd")
+    const passwordconfirm = document.querySelector(".pwdconfirm")
+  
+
+    function pwdCheck() {
+        if (password !== passwordconfirm) {
+            alert('Your passwords must match!');
+        } else console.log('MATCH')
+    };
+        
+    
+
+</script>
+</html>
